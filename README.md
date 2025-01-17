@@ -4,12 +4,10 @@
 
 - 本插件适用于kettle6.1连接华为elasticsearch（6.1.3版本）集群，已测试
 
-- 理论上支持CDI连接华为elasticsearch（6.1.3版本）集群，未测试
-
 - 连接准备 
-  1. 在kettle、CDI主目录新建conf文件夹
-  2. 进入华为elasticsearch集群示例代码中的transport连接方式目录，将conf下es-example.properties文件复制到kettle/CDI主目录的conf下
-  3. 将kerberos认证的user.keytab文件以及krb5.conf文件复制到kettle/CDI主目录的conf下
+  1. 在kettle主目录新建conf文件夹
+  2. 进入华为elasticsearch集群示例代码中的transport连接方式目录，将conf下es-example.properties文件复制到kettle主目录的conf下
+  3. 将kerberos认证的user.keytab文件以及krb5.conf文件复制到kettle主目录的conf下
   
 - 华为elasticsearch集群使用kerberos认证，使用transport连接会导致第一次连接比较慢，可能需要几分钟，请耐心等待
 
